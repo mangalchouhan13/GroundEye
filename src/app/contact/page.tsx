@@ -15,12 +15,12 @@ export const metadata = {
     "Distance is yours, duty is ours. Contact GroundEye in Udaipur, Rajasthan. Schedule an on-ground physical asset inspection, engage villa concierge care, or request verified rental scouting.",
 };
 
-export default function ContactPage({
+export default async function ContactPage({
   searchParams,
 }: {
-  searchParams?: { service?: string };
+  searchParams?: Promise<{ service?: string }>;
 }) {
-  const selectedService = searchParams?.service;
+  const selectedService = (await searchParams)?.service;
 
   const faqs = [
     {

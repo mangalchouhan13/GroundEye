@@ -49,15 +49,15 @@ export default function Navbar() {
           badge: "Pillar 01",
         },
         {
-          name: "Villa & BnB Care",
-          desc: "Key handovers, guest reception & maintenance care",
+          name: "Villa & Homestay Custody",
+          desc: "Monthly 35-point audits, secure keys & priority dispatch",
           href: "/services/villa-bnb-care",
           icon: KeyRound,
           badge: "Pillar 02",
         },
         {
-          name: "Fast-Rent Scout",
-          desc: "Direct landlord verification & unedited interior tours",
+          name: "Rental Readiness & Key Desk",
+          desc: "Monthly checks, key handovers & rental scouting",
           href: "/services/fast-rent-scout",
           icon: SearchCheck,
           badge: "Pillar 03",
@@ -255,14 +255,14 @@ export default function Navbar() {
                   className="flex items-center gap-2 py-1.5 text-xs text-[#52524E] hover:text-[#141413]"
                 >
                   <KeyRound className="w-3.5 h-3.5 text-[#9C7948]" />
-                  <span>Villa & BnB Care</span>
+                  <span>Villa & Homestay Custody</span>
                 </Link>
                 <Link
                   href="/services/fast-rent-scout"
                   className="flex items-center gap-2 py-1.5 text-xs text-[#52524E] hover:text-[#141413]"
                 >
                   <SearchCheck className="w-3.5 h-3.5 text-[#9C7948]" />
-                  <span>Fast-Rent Scout</span>
+                  <span>Rental Readiness & Key Desk</span>
                 </Link>
               </div>
             </div>

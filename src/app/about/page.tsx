@@ -41,9 +41,6 @@ export default function AboutPage() {
             Headquartered in Udaipur, Rajasthan, GroundEye operates as an independent on-ground concierge and asset audit enterprise. We bridge the critical gap between digital listings and tangible physical reality.
           </p>
 
-          <p className="text-xs font-serif italic text-[#7A5C33] pt-1">
-            "Distance is yours, duty is ours."
-          </p>
         </div>
       </section>
 
@@ -209,11 +206,11 @@ export default function AboutPage() {
               <div className="flex items-center gap-2">
                 <KeyRound className="w-4 h-4 text-[#B89360]" />
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-[#141413]">
-                  Villa & BnB Care
+                  Villa & Homestay Custody
                 </h3>
               </div>
               <p className="text-xs text-[#52524E] font-light leading-relaxed">
-                Guest reception, key handovers, on-call property assistance, maintenance vendor coordination, and check-in/out damage inspections.
+                Two monthly 35-point audits, dampness and seepage checks, secure key custody, guest inventory and turnover checks, and priority breakdown dispatch.
               </p>
               <Link
                 href="/services/villa-bnb-care"
@@ -227,7 +224,7 @@ export default function AboutPage() {
               <div className="flex items-center gap-2">
                 <SearchCheck className="w-4 h-4 text-[#B89360]" />
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-[#141413]">
-                  Fast-Rent Scout
+                  Rental Readiness & Key Desk
                 </h3>
               </div>
               <p className="text-xs text-[#52524E] font-light leading-relaxed">

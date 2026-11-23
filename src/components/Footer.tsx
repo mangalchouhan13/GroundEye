@@ -37,12 +37,6 @@ export default function Footer() {
               GroundEye is an independent on-ground concierge and asset audit enterprise headquartered in Udaipur, Rajasthan. We serve as your objective, physical eyes on the ground—delivering verified photographic, GPS-timestamped, and concierge intelligence.
             </p>
 
-            <div className="pt-1">
-              <p className="text-xs font-serif italic text-[#7A5C33]">
-                "Distance is yours, duty is ours."
-              </p>
-            </div>
-
             {/* Operating Guarantees */}
             <div className="pt-2 space-y-1.5">
               <div className="flex items-center gap-2 text-xs text-[#242422]">
@@ -114,7 +108,7 @@ export default function Footer() {
                   href="/services/villa-bnb-care"
                   className="text-[#52524E] hover:text-[#141413] transition-colors flex items-center justify-between group"
                 >
-                  <span>Villa & BnB Care</span>
+                  <span>Villa & Homestay Custody</span>
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-[#B89360]" />
                 </Link>
               </li>
@@ -123,7 +117,7 @@ export default function Footer() {
                   href="/services/fast-rent-scout"
                   className="text-[#52524E] hover:text-[#141413] transition-colors flex items-center justify-between group"
                 >
-                  <span>Fast-Rent Scout</span>
+                  <span>Rental Readiness & Key Desk</span>
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-[#B89360]" />
                 </Link>
               </li>
@@ -144,7 +138,7 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#B89360] shrink-0 mt-0.5" />
                 <span>
-                  Parshav Colony, Back Side of Navdeep Academy, Near Kalka Mata Road, Pahada, Udaipur, Rajasthan 313001
+                  Kalka Mata Road, Udaipur (Rajasthan), 313001
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -158,7 +152,7 @@ export default function Footer() {
                 <div>
                   <p>Mon - Sun: 8:30 AM - 7:30 PM</p>
                   <p className="text-[10px] text-[#7A5C33]">
-                    Emergency Villa Concierge: Active 24/7
+                    Priority Breakdown Dispatch: 30–45 min in Udaipur
                   </p>
                 </div>
               </li>
@@ -183,15 +177,15 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-[#CFB483]/20 flex flex-col sm:flex-row items-center justify-between text-xs text-[#73736D] gap-4">
-          <p>© {currentYear} GROUNDEYE. Distance Is Yours. Duty Is Ours.</p>
+          <p>© {currentYear} GroundEye. All Rights Reserved.</p>
           <div className="flex items-center space-x-4 text-[11px] text-[#73736D]">
             <span>Udaipur, Rajasthan</span>
             <span className="w-1 h-1 rounded-full bg-[#CFB483]" />
             <span>Asset Intelligence</span>
             <span className="w-1 h-1 rounded-full bg-[#CFB483]" />
-            <span>Villa & BnB Care</span>
+            <span>Villa & Homestay Custody</span>
             <span className="w-1 h-1 rounded-full bg-[#CFB483]" />
-            <span>Fast-Rent Scout</span>
+            <span>Rental Readiness & Key Desk</span>
           </div>
         </div>
       </div>

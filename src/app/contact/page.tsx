@@ -110,7 +110,7 @@ export default async function ContactPage({
                     Physical Hub Address
                   </h4>
                   <p className="text-xs text-[#52524E] font-light leading-relaxed">
-                    Parshav Colony, Back Side of Navdeep Academy, Near Kalka Mata Road, Pahada, Udaipur, Rajasthan 313001, India
+                    Kalka Mata Road, Udaipur (Rajasthan), 313001
                   </p>
                 </div>
               </div>

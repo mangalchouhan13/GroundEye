@@ -53,10 +53,6 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
             </div>
 
-            {/* Subtle decorative gold hairline badge on visual */}
-            <div className="absolute top-4 right-4 bg-[#FAF8F5]/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#CFB483]/40 text-[9px] uppercase tracking-[0.2em] font-semibold text-[#7A5C33]">
-              Verified Physical Ground Units
-            </div>
           </div>
 
           {/* Editorial Headline & Taglines EXACTLY Matching Reference Inspiration */}
@@ -65,10 +61,6 @@ export default function HomePage() {
               A New Perspective. <br />
               <span className="italic font-normal">A New Presence.</span>
             </h1>
-
-            <p className="text-base sm:text-xl text-[#52524E] font-light tracking-wide font-sans">
-              Distance is yours, duty is ours.
-            </p>
 
             <div className="pt-1">
               <span className="text-[11px] sm:text-xs font-semibold tracking-[0.3em] uppercase text-[#9C7948]">

@@ -13,15 +13,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "GROUNDEYE | On-Ground Concierge & Asset Audit | Udaipur, Rajasthan",
   description:
-    "Distance Is Yours. Duty Is Ours. GroundEye is Udaipur's dedicated on-ground concierge and asset audit enterprise. Specializing in Asset Intelligence, Villa & BnB Care, and Fast-Rent Scout.",
+    "Distance Is Yours. Duty Is Ours. GroundEye is Udaipur's dedicated on-ground concierge and asset audit enterprise. Specializing in Asset Intelligence, Villa & Homestay Custody, and Rental Readiness & Key Desk.",
   keywords: [
     "GroundEye",
     "Asset Audit Udaipur",
     "Physical Property Inspection Udaipur",
     "GPS Timestamped Property Verification",
     "Villa Care Udaipur",
-    "Homestay BnB Concierge Udaipur",
-    "Fast Rent Scout Rajasthan",
+    "Villa and Homestay Custody Udaipur",
+    "Rental Readiness and Key Desk Udaipur",
     "Distance is yours duty is ours",
     "A New Perspective A New Presence",
   ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GROUNDEYE | A New Perspective. A New Presence.",
     description:
-      "Distance is yours, duty is ours. Independent on-ground concierge & asset audit enterprise in Udaipur, Rajasthan. Asset Intelligence, Villa & BnB Care, Fast-Rent Scout.",
+      "Distance is yours, duty is ours. Independent on-ground concierge & asset audit enterprise in Udaipur, Rajasthan. Asset Intelligence, Villa & Homestay Custody, Rental Readiness & Key Desk.",
     url: "https://groundeye.in",
     siteName: "GROUNDEYE",
     locale: "en_IN",

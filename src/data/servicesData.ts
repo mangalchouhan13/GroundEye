@@ -106,160 +106,165 @@ export const servicesData: ServicePillar[] = [
   {
     id: "villa-bnb-care",
     slug: "villa-bnb-care",
-    title: "Villa & BnB Care",
-    subtitle: "On-Ground Concierge & Property Safeguarding",
+    title: "Villa & Homestay Custody",
+    subtitle: "Monthly Property Audits & On-Ground Safeguarding",
     shortDescription:
-      "Guest reception, key handovers, on-call property assistance, maintenance vendor coordination, and check-in/out damage inspections.",
-    tagline: "Your reliable, physical presence in Udaipur for luxury villas, homestays, and boutique stays.",
+      "Two monthly 35-point audits, dampness and seepage checks, essential-system testing, secure key custody, guest inventory and turnover checks, and priority breakdown dispatch in Udaipur.",
+    tagline: "Trusted local oversight for luxury villas, second homes, and homestays.",
     badge: "Pillar 02",
     iconName: "KeyRound",
     heroImage: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop",
     keyFeatures: [
       {
-        title: "Guest Reception & Key Handovers",
+        title: "Two Monthly 35-Point Audits",
         description:
-          "Warm, professional in-person guest greetings, identity verification, orientation of property amenities, and secure physical key management.",
-        icon: "KeyRound",
-      },
-      {
-        title: "On-Call Property Assistance",
-        description:
-          "Direct local point-of-contact for staying guests, handling immediate logistical inquiries, guidance, and emergency response during their stay in Udaipur.",
-        icon: "PhoneCall",
-      },
-      {
-        title: "Maintenance Vendor Coordination",
-        description:
-          "On-site supervision of local electricians, plumbers, HVAC technicians, pool maintenance, and cleaners to ensure high-quality workmanship.",
-        icon: "Wrench",
-      },
-      {
-        title: "Guest Check-In/Check-Out Inspections",
-        description:
-          "Thorough pre-arrival checklist validation and post-departure room-by-room walkthroughs to verify property condition and asset safety.",
+          "Two detailed property audits each month, including dampness and seepage checks and essential-system testing.",
         icon: "ClipboardCheck",
       },
       {
-        title: "Property Damage Reporting",
+        title: "Key Lockbox & Numbered Security Seals",
         description:
-          "Immediate photographic documentation and time-stamped incident reporting of any guest-caused breakages, wear, or equipment failures.",
-        icon: "AlertTriangle",
+          "Secure key custody using a key lockbox and numbered security seals.",
+        icon: "KeyRound",
+      },
+      {
+        title: "Guest Inventory & Turnover Checks",
+        description:
+          "Guest inventory checks and property turnover checks to help owners track readiness between stays.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Priority Breakdown Dispatch",
+        description:
+          "A 30–45 minute priority dispatch commitment within Udaipur for urgent breakdowns.",
+        icon: "PhoneCall",
       },
     ],
     deliverables: [
-      "Guest check-in & check-out confirmation logs with timestamps",
-      "Pre-arrival cleanliness and amenity audit reports",
-      "Immediate photographic damage reports with repair assessments",
-      "Supervised vendor maintenance sign-off logs",
-      "Secure key custody with tamper-evident chain of custody",
-      "24/7 emergency escalation contact in Udaipur",
+      "Two detailed 35-point audit reports each month",
+      "Dampness, seepage, and essential-system check records",
+      "Key lockbox and numbered security seal records",
+      "Guest inventory and property turnover check records",
+      "Priority dispatch for urgent breakdowns within Udaipur",
     ],
     targetAudience: [
-      "Owners of luxury vacation villas and heritage havelis in Udaipur",
-      "Airbnb, Vrbo, and boutique homestay operators residing outside Rajasthan",
-      "High-end residential property owners hosting seasonal guests",
-      "Property management agencies seeking reliable ground-level operational partners",
+      "Owners of luxury villas and second homes",
+      "Homestay owners seeking regular local property oversight",
+      "Remote owners who need documented audits and secure key custody",
     ],
     workflow: [
       {
         step: "01",
-        title: "Property Onboarding & SOP Audit",
-        description: "Site visit to catalog amenities, keys, electrical panels, vendor contacts, and host guidelines.",
+        title: "Property Onboarding",
+        description: "Record the property details, access arrangements, key lockbox, and owner instructions.",
       },
       {
         step: "02",
-        title: "Reservation Schedule Sync",
-        description: "Coordinating guest arrival timelines, special requests, and pre-stay preparation.",
+        title: "Monthly 35-Point Audits",
+        description: "Complete two detailed monthly audits, including dampness, seepage, and essential-system checks.",
       },
       {
         step: "03",
-        title: "In-Person Welcome & Stay Support",
-        description: "Welcoming guests on arrival, handing over keys, and remaining available for on-call assistance.",
+        title: "Key, Inventory & Turnover Checks",
+        description: "Secure keys with numbered seals and check guest inventory and property turnover.",
       },
       {
         step: "04",
-        title: "Departure Inspection & Report",
-        description: "Post-stay walkthrough, damage audit, vendor handoff for turnaround, and host debrief.",
+        title: "Priority Breakdown Dispatch",
+        description: "Coordinate priority dispatch within 30–45 minutes in Udaipur for urgent breakdowns.",
       },
     ],
   },
   {
     id: "fast-rent-scout",
     slug: "fast-rent-scout",
-    title: "Fast-Rent Scout",
-    subtitle: "Direct Landlord Verification & Rental Matchmaking",
+    title: "Rental Readiness & Key Desk",
+    subtitle: "Rental Readiness, Key Handover & Scouting",
     shortDescription:
-      "Direct landlord verification, digital property listings, 30-second interior video, physical visit assistance, and transparent tenant matchmaking.",
-    tagline: "Authentic, zero-middleman rental scouting with physically verified homes in Udaipur.",
+      "Monthly property checks, move-in and move-out audits, key handovers, utility logs, and non-brokerage rental scouting in Udaipur.",
+    tagline: "A ready, documented property and a direct connection between owners and tenants.",
     badge: "Pillar 03",
     iconName: "SearchCheck",
     heroImage: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop",
     keyFeatures: [
       {
-        title: "Direct Landlord Verification",
+        title: "Monthly Rental Readiness Checks",
         description:
-          "We personally meet the property owner, confirm authentic ownership credentials, and establish clear rental terms—eliminating unauthorized sub-brokers.",
-        icon: "ShieldAlert",
+          "Two routine monthly visits for flats, apartments, and independent houses up to 1,500 sq. ft., keeping owners informed about property condition.",
+        icon: "ClipboardCheck",
       },
       {
-        title: "Digital Property Listings",
+        title: "Move-In & Move-Out Condition Audits",
         description:
-          "Clean, verified digital showcases featuring precise floor plans, verified amenity checklists, natural daylight photography, and authentic neighborhood context.",
+          "Full condition audits before move-in and after move-out, with clear records of the property's state.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Fixture, Lock & Utility Logs",
+        description:
+          "Documented fixture and lock checks, plus AVVNL / PHED meter-reading logs.",
         icon: "FileText",
       },
       {
-        title: "30-Second Interior Video",
+        title: "Cleaning & Repair Coordination",
         description:
-          "Rapid, unedited, realistic 30-second continuous walkthrough videos that reveal true dimensions, plumbing status, and natural lighting without deceiving wide lenses.",
+          "On-ground coordination for cleaning and repair needs identified during property checks.",
+        icon: "Wrench",
+      },
+      {
+        title: "Signed Key Handover",
+        description:
+          "Documented handover of keys to the owner's chosen tenant. GroundEye operates strictly on a non-brokerage basis.",
+        icon: "KeyRound",
+      },
+      {
+        title: "Direct Rental Scouting",
+        description:
+          "Direct owner connections, property listings, and tenant introductions without unauthorized sub-brokers or transaction commissions.",
+        icon: "SearchCheck",
+      },
+      {
+        title: "Interior Tours & Property Visits",
+        description:
+          "Unedited 30-second interior videos and accompanied on-ground visits help prospective tenants assess homes in Udaipur.",
         icon: "Video",
-      },
-      {
-        title: "Physical Property Visit Assistance",
-        description:
-          "On-ground concierge accompanied visits for prospective tenants, coordinating building access and answering local neighborhood questions.",
-        icon: "Navigation",
-      },
-      {
-        title: "Tenant Matchmaking",
-        description:
-          "Connecting verified, respectable tenants with genuine landlords based on mutual expectations, lease term alignments, and verified credentials.",
-        icon: "Users",
       },
     ],
     deliverables: [
-      "Physically verified property badge & verification dossier",
-      "Direct owner-tenant communication link without broker interference",
-      "Unedited 30-second interior raw continuous video",
-      "Accompanied on-ground property viewings in Udaipur",
-      "Verified lease parameter summary and move-in checklist",
-      "Neighborhood infrastructure overview (water supply, parking, commute)",
+      "Two routine monthly property-check logs",
+      "Move-in and move-out condition audit reports",
+      "Fixture and lock check records",
+      "AVVNL / PHED meter-reading logs",
+      "Cleaning and repair coordination updates",
+      "Signed key handover record for the owner's chosen tenant",
+      "Direct rental-scouting support, interior video, and accompanied visits",
     ],
     targetAudience: [
-      "Professionals, doctors, educators, and families relocating to Udaipur",
-      "Landlords seeking trustworthy, verified tenants without relentless broker spam",
-      "Remote workers and digital nomads looking for authentic, vetted long-term rentals",
-      "College faculties, corporate executives, and students seeking legitimate housing",
+      "Owners of flats, apartments, and independent houses up to 1,500 sq. ft.",
+      "Remote landlords who need regular property checks and key custody in Udaipur",
+      "Owners preparing a home for move-in or documenting its condition after move-out",
+      "Tenants seeking verified homes and direct owner connections in Udaipur",
     ],
     workflow: [
       {
         step: "01",
-        title: "Property & Owner Verification",
-        description: "Our team inspects the rental unit in person, meets the landlord, and verifies ownership documentation.",
+        title: "Property Onboarding",
+        description: "Confirm the property scope, owner instructions, key arrangements, and preferred reporting details.",
       },
       {
         step: "02",
-        title: "Media Capture & Scouting Showcase",
-        description: "Capturing the 30-second raw interior video, verifying utility fixtures, water pressure, and dimensions.",
+        title: "Routine Checks & Logs",
+        description: "Complete two scheduled monthly visits and record condition, fixtures, locks, and meter readings.",
       },
       {
         step: "03",
-        title: "Targeted Matchmaking & Visits",
-        description: "Matching pre-screened tenants with suitable properties and escorting physical visits.",
+        title: "Condition Audits & Rental Scouting",
+        description: "Document move-in or move-out condition; provide direct rental-scouting support when requested.",
       },
       {
         step: "04",
-        title: "Direct Handover Facilitation",
-        description: "Direct connection between landlord and tenant with clean terms, zero broker commission markups.",
+        title: "Key Handover & Follow-Up",
+        description: "Record the signed key handover to the owner's chosen tenant and coordinate any agreed cleaning or repairs.",
       },
     ],
   },

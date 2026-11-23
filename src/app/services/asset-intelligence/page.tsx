@@ -43,10 +43,6 @@ export default function AssetIntelligencePage() {
               Objective, boots-on-the-ground physical inspections, satellite-verified GPS photography, 4K panoramic video scans, calibrated road width measurements, and perimeter boundary audits across Udaipur, Rajasthan.
             </p>
 
-            <p className="text-xs font-serif italic text-[#7A5C33] pt-1">
-              "Distance is yours, duty is ours."
-            </p>
-
             <div className="flex flex-wrap items-center gap-4 pt-3">
               <Link
                 href="/contact?service=asset-intelligence"

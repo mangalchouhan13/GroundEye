@@ -15,7 +15,7 @@ import { servicesData } from "@/data/servicesData";
 export const metadata = {
   title: "Our Three Services | GroundEye On-Ground Concierge & Asset Audit",
   description:
-    "Distance is yours, duty is ours. Explore GroundEye's three core pillars: Asset Intelligence (physical inspections & GPS audits), Villa & BnB Care (concierge & key handovers), and Fast-Rent Scout (landlord verification).",
+    "Distance is yours, duty is ours. Explore GroundEye's three core pillars: Asset Intelligence, Villa & Homestay Custody, and Rental Readiness & Key Desk.",
 };
 
 export default function ServicesPage() {
@@ -100,29 +100,29 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Villa Care Audience */}
+            {/* Villa & Homestay Custody Audience */}
             <div className="space-y-4 p-6 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/20 flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="w-9 h-9 rounded-full bg-white border border-[#B89360] flex items-center justify-center text-[#9C7948]">
                   <KeyRound className="w-4 h-4" />
                 </div>
                 <h3 className="text-lg font-semibold text-[#141413] uppercase tracking-wider">
-                  Villa & BnB Care
+                  Villa & Homestay Custody
                 </h3>
                 <p className="text-[10px] text-[#7A5C33] font-mono uppercase tracking-widest">
-                  Best For Homestay & Villa Hosts
+                  Best For Luxury Villa, Second Home & Homestay Owners
                 </p>
                 <p className="text-xs text-[#52524E] font-light leading-relaxed">
-                  Designed for owners of heritage havelis, farmstays, and Airbnb villas who reside elsewhere and require responsible physical concierge, guest check-ins, and damage oversight.
+                  Two detailed 35-point audits monthly, dampness and seepage checks, essential-system testing, key lockbox with numbered security seals, guest inventory and turnover checks, and priority dispatch for urgent breakdowns.
                 </p>
                 <div className="pt-2 space-y-1.5">
                   <p className="text-[10px] font-semibold text-[#141413] uppercase tracking-wider">
                     Typical Scenarios:
                   </p>
                   <ul className="text-xs text-[#73736D] space-y-1 font-light">
-                    <li>• Personal guest reception and key handovers</li>
-                    <li>• On-call guest assistance during stay in Udaipur</li>
-                    <li>• Immediate departure damage inspections & logs</li>
+                    <li>• Two monthly 35-point property audits</li>
+                    <li>• Secure key lockbox and numbered security seals</li>
+                    <li>• 30–45 minute urgent breakdown dispatch in Udaipur</li>
                   </ul>
                 </div>
               </div>
@@ -131,35 +131,35 @@ export default function ServicesPage() {
                   href="/services/villa-bnb-care"
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-full bg-white hover:bg-[#141413] hover:text-white border border-[#CFB483]/40 text-xs font-semibold uppercase tracking-wider text-[#141413] transition-all"
                 >
-                  <span>View Villa & BnB Care</span>
+                  <span>View Villa & Homestay Custody</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>
 
-            {/* Fast Rent Scout Audience */}
+            {/* Rental Readiness & Key Desk Audience */}
             <div className="space-y-4 p-6 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/20 flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="w-9 h-9 rounded-full bg-white border border-[#B89360] flex items-center justify-center text-[#9C7948]">
                   <SearchCheck className="w-4 h-4" />
                 </div>
                 <h3 className="text-lg font-semibold text-[#141413] uppercase tracking-wider">
-                  Fast-Rent Scout
+                  Rental Readiness & Key Desk
                 </h3>
                 <p className="text-[10px] text-[#7A5C33] font-mono uppercase tracking-widest">
-                  Best For Tenants & Landlords
+                  Best For Rental Property Owners & Tenants
                 </p>
                 <p className="text-xs text-[#52524E] font-light leading-relaxed">
-                  Designed for tenants relocating to Udaipur who need authentic 30-second interior video tours and direct landlord connections without unauthorized middlemen.
+                  For owners who need monthly property checks, condition audits, utility logs, cleaning and repair coordination, and key handovers—alongside non-brokerage rental scouting for tenants.
                 </p>
                 <div className="pt-2 space-y-1.5">
                   <p className="text-[10px] font-semibold text-[#141413] uppercase tracking-wider">
                     Typical Scenarios:
                   </p>
                   <ul className="text-xs text-[#73736D] space-y-1 font-light">
-                    <li>• Relocating to Udaipur for work, medical, or education</li>
-                    <li>• Avoiding misleading ultra-wide angle photography</li>
-                    <li>• Escorted, safe on-ground property visits</li>
+                    <li>• Two routine monthly checks for homes up to 1,500 sq. ft.</li>
+                    <li>• Move-in / move-out audits and signed key handovers</li>
+                    <li>• Direct rental scouting and accompanied property visits</li>
                   </ul>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
                   href="/services/fast-rent-scout"
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-full bg-white hover:bg-[#141413] hover:text-white border border-[#CFB483]/40 text-xs font-semibold uppercase tracking-wider text-[#141413] transition-all"
                 >
-                  <span>View Fast-Rent Scout</span>
+                  <span>View Rental Readiness & Key Desk</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

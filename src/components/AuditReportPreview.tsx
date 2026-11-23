@@ -27,7 +27,7 @@ export default function AuditReportPreview() {
                 GroundEye Field Dossier
               </span>
               <span className="px-2 py-0.5 rounded-full text-[9px] font-mono bg-[#EFECE3] text-[#7A5C33] border border-[#CFB483]/50">
-                VERIFIED ON-GROUND
+                SAMPLE • NOT A REAL AUDIT
               </span>
             </div>
             <p className="text-[11px] text-[#73736D] font-mono">
@@ -135,14 +135,14 @@ export default function AuditReportPreview() {
               <div className="absolute bottom-3 left-3 right-3 bg-[#141413]/90 text-white p-3 rounded-xl border border-[#CFB483]/30 text-xs backdrop-blur-md flex flex-wrap items-center justify-between gap-2">
                 <div>
                   <p className="font-semibold text-xs tracking-wider text-white">
-                    GROUNDEYE ON-GROUND AUDIT EVIDENCE • ENCRYPTED WATERMARK
+                    ILLUSTRATIVE SAMPLE • NOT REAL AUDIT EVIDENCE
                   </p>
                   <p className="text-slate-400 text-[10px] font-mono mt-0.5">
                     Bearing: 184° S (True North Calibrated) | Frontage Width: 30.2 ft
                   </p>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full text-[9px] font-mono bg-[#B89360] text-white font-bold">
-                  4K RAW CAPTURED
+                  SAMPLE IMAGE
                 </span>
               </div>
             </div>
@@ -230,8 +230,7 @@ export default function AuditReportPreview() {
       </div>
 
       <div className="px-6 py-3 bg-[#FAF8F5] border-t border-[#CFB483]/20 flex items-center justify-between text-[11px] text-[#73736D]">
-        <span>GroundEye Field Dossier Export (Format: Standard PDF + RAW Media Cloud)</span>
-        <span className="text-[#9C7948] font-serif italic">Distance is yours, duty is ours.</span>
+        <span>Illustrative Sample Dossier • Not a Real Property Audit</span>
       </div>
     </div>
   );

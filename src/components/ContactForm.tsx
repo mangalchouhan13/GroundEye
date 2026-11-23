@@ -10,8 +10,15 @@ export default function ContactForm({ preselectedService }: { preselectedService
       "Hello GroundEye, I would like to inquire about your property services in Udaipur."
     );
 
-  const emailUrl =
-    "mailto:contact.groundeye@gmail.com?subject=GroundEye%20Service%20Inquiry&body=Hello%20GroundEye%20Team%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20services.%0A%0ARegards";
+  const emailUrl = new URL("https://mail.google.com/mail/");
+  emailUrl.searchParams.set("view", "cm");
+  emailUrl.searchParams.set("fs", "1");
+  emailUrl.searchParams.set("to", "contact.groundeye@gmail.com");
+  emailUrl.searchParams.set("su", "GroundEye Service Inquiry");
+  emailUrl.searchParams.set(
+    "body",
+    "Hello GroundEye Team,\n\nI would like to inquire about your services.\n\nRegards"
+  );
 
   return (
     <div className="bg-white border border-[#CFB483]/35 rounded-2xl p-6 sm:p-10 shadow-sm">
@@ -60,7 +67,9 @@ export default function ContactForm({ preselectedService }: { preselectedService
 
       {/* Email Button */}
       <a
-        href={emailUrl}
+        href={emailUrl.toString()}
+        target="_blank"
+        rel="noopener noreferrer"
         className="group flex items-center justify-between w-full p-5 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/30 hover:border-[#B89360] hover:shadow-md transition-all duration-200"
       >
         <div className="flex items-center gap-4">

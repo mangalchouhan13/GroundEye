@@ -184,15 +184,15 @@ export default async function ContactPage({
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-white border border-[#CFB483]/30 space-y-1.5 hover:border-[#B89360] shadow-sm transition-all"
+              className="group p-6 rounded-2xl bg-white hover:bg-[#FCFAF7] border border-[#CFB483]/30 hover:border-[#B89360] space-y-1.5 shadow-sm hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none"
             >
               <div className="flex items-start gap-3">
                 <HelpCircle className="w-4 h-4 text-[#B89360] shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <h3 className="text-sm font-semibold text-[#141413]">
+                  <h3 className="text-sm font-semibold text-[#141413] transition-all duration-300 group-hover:font-bold group-hover:text-[#7A5C33]">
                     {faq.q}
                   </h3>
-                  <p className="text-xs text-[#52524E] font-light leading-relaxed">
+                  <p className="text-xs text-[#52524E] font-light leading-relaxed transition-all duration-500 ease-in-out group-hover:text-[#3F3F3A] [text-shadow:0_0_0_transparent,_0_0_0_transparent] group-hover:[text-shadow:0.25px_0_0_currentColor,_-0.25px_0_0_currentColor]">
                     {faq.a}
                   </p>
                 </div>

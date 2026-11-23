@@ -10,7 +10,6 @@ import {
   CheckCircle2,
   ArrowRight,
   MapPin,
-  HeartHandshake,
 } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import { servicesData } from "@/data/servicesData";
@@ -101,18 +100,6 @@ export default function VillaBnbCarePage() {
               </div>
             );
           })}
-
-          <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/40 space-y-4 shadow-sm">
-            <div className="w-10 h-10 rounded-full bg-white border border-[#B89360] flex items-center justify-center text-[#9C7948]">
-              <HeartHandshake className="w-5 h-5" />
-            </div>
-            <h3 className="text-base font-semibold text-[#141413] uppercase tracking-wider">
-              Hospitality Polish
-            </h3>
-            <p className="text-xs text-[#52524E] font-light leading-relaxed">
-              We greet your guests with royal Rajasthani warmth and professional etiquette, leaving an unforgettable first impression for your boutique vacation rental.
-            </p>
-          </div>
         </div>
       </section>
 

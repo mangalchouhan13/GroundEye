@@ -26,6 +26,13 @@ export const metadata: Metadata = {
     "A New Perspective A New Presence",
   ],
   authors: [{ name: "GROUNDEYE" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   openGraph: {
     title: "GROUNDEYE | A New Perspective. A New Presence.",
     description:
@@ -34,9 +41,6 @@ export const metadata: Metadata = {
     siteName: "GROUNDEYE",
     locale: "en_IN",
     type: "website",
-  },
-  icons: {
-    icon: "/favicon.ico",
   },
 };
 

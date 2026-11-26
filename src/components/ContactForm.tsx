@@ -26,6 +26,16 @@ export default function ContactForm({ preselectedService }: { preselectedService
   const nativeEmailUrl = `mailto:contact.groundeye@gmail.com?subject=${encodeURIComponent(
     emailSubject
   )}&body=${encodeURIComponent(inquiryBody)}`;
+  const handleEmailClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const isMobileDevice =
+      /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+      navigator.maxTouchPoints > 1;
+
+    if (isMobileDevice) return;
+
+    event.preventDefault();
+    window.open(gmailComposeUrl.toString(), "_blank", "noopener,noreferrer");
+  };
   const whatsappUrl =
     "https://wa.me/917976370625?text=" +
     encodeURIComponent(
@@ -82,6 +92,7 @@ export default function ContactForm({ preselectedService }: { preselectedService
       {/* Email Button */}
       <a
         href={nativeEmailUrl}
+        onClick={handleEmailClick}
         className="group flex items-center justify-between w-full p-5 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/30 hover:border-[#B89360] hover:shadow-md transition-all duration-200"
       >
         <div className="flex items-center gap-4">
@@ -102,7 +113,7 @@ export default function ContactForm({ preselectedService }: { preselectedService
           rel="noopener noreferrer"
           className="underline underline-offset-2 hover:text-[#9C7948]"
         >
-          If email app doesn&apos;t open, compose in Gmail
+          Compose in Gmail instead
         </a>
       </p>
 

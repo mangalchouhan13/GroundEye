@@ -66,7 +66,7 @@ export default function ContactForm({ preselectedService }: { preselectedService
           </div>
           <div className="text-left">
             <p className="text-base font-semibold text-[#141413]">Chat on WhatsApp</p>
-            <p className="text-xs text-[#52524E] font-light mt-0.5">+91 79763 70625 · Instant reply</p>
+            <p className="text-xs text-[#52524E] font-light mt-0.5">+91 79763 XXXXX · Instant reply</p>
           </div>
         </div>
         <ArrowRight className="w-5 h-5 text-green-500 group-hover:translate-x-1 transition-transform duration-200" />

@@ -81,9 +81,7 @@ export default function ContactForm({ preselectedService }: { preselectedService
 
       {/* Email Button */}
       <a
-        href={gmailComposeUrl.toString()}
-        target="_blank"
-        rel="noopener noreferrer"
+        href={nativeEmailUrl}
         className="group flex items-center justify-between w-full p-5 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/30 hover:border-[#B89360] hover:shadow-md transition-all duration-200"
       >
         <div className="flex items-center gap-4">
@@ -99,10 +97,12 @@ export default function ContactForm({ preselectedService }: { preselectedService
       </a>
       <p className="text-[10px] text-center text-[#73736D] mt-3">
         <a
-          href={nativeEmailUrl}
+          href={gmailComposeUrl.toString()}
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline underline-offset-2 hover:text-[#9C7948]"
         >
-          Use your phone&apos;s default email app
+          If email app doesn&apos;t open, compose in Gmail
         </a>
       </p>
 

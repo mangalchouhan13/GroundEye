@@ -4,21 +4,35 @@ import React from "react";
 import { Mail, ArrowRight, ShieldCheck } from "lucide-react";
 
 export default function ContactForm({ preselectedService }: { preselectedService?: string }) {
+  const serviceLabels: Record<string, string> = {
+    "asset-intelligence": "Asset Intelligence",
+    "fast-rent-scout": "Rental Readiness & Key Desk",
+    "villa-bnb-care": "Villa & Homestay Custody",
+  };
+  const selectedService = preselectedService
+    ? serviceLabels[preselectedService]
+    : undefined;
+  const serviceText = selectedService ? `Service: ${selectedService}\n\n` : "";
+  const inquiryBody = `Hello GroundEye Team,\n\n${serviceText}I would like to inquire about your services.\n\nRegards`;
+  const emailSubject = selectedService
+    ? `GroundEye Service Inquiry - ${selectedService}`
+    : "GroundEye Service Inquiry";
+  const gmailComposeUrl = new URL("https://mail.google.com/mail/");
+  gmailComposeUrl.searchParams.set("view", "cm");
+  gmailComposeUrl.searchParams.set("fs", "1");
+  gmailComposeUrl.searchParams.set("to", "contact.groundeye@gmail.com");
+  gmailComposeUrl.searchParams.set("su", emailSubject);
+  gmailComposeUrl.searchParams.set("body", inquiryBody);
+  const nativeEmailUrl = `mailto:contact.groundeye@gmail.com?subject=${encodeURIComponent(
+    emailSubject
+  )}&body=${encodeURIComponent(inquiryBody)}`;
   const whatsappUrl =
     "https://wa.me/917976370625?text=" +
     encodeURIComponent(
-      "Hello GroundEye, I would like to inquire about your property services in Udaipur."
+      `Hello GroundEye, I would like to inquire about ${
+        selectedService ? `${selectedService} ` : ""
+      }property services in Udaipur.`
     );
-
-  const emailUrl = new URL("https://mail.google.com/mail/");
-  emailUrl.searchParams.set("view", "cm");
-  emailUrl.searchParams.set("fs", "1");
-  emailUrl.searchParams.set("to", "contact.groundeye@gmail.com");
-  emailUrl.searchParams.set("su", "GroundEye Service Inquiry");
-  emailUrl.searchParams.set(
-    "body",
-    "Hello GroundEye Team,\n\nI would like to inquire about your services.\n\nRegards"
-  );
 
   return (
     <div className="bg-white border border-[#CFB483]/35 rounded-2xl p-6 sm:p-10 shadow-sm">
@@ -67,7 +81,7 @@ export default function ContactForm({ preselectedService }: { preselectedService
 
       {/* Email Button */}
       <a
-        href={emailUrl.toString()}
+        href={gmailComposeUrl.toString()}
         target="_blank"
         rel="noopener noreferrer"
         className="group flex items-center justify-between w-full p-5 rounded-2xl bg-[#FAF8F5] border border-[#CFB483]/30 hover:border-[#B89360] hover:shadow-md transition-all duration-200"
@@ -83,6 +97,14 @@ export default function ContactForm({ preselectedService }: { preselectedService
         </div>
         <ArrowRight className="w-5 h-5 text-[#B89360] group-hover:translate-x-1 transition-transform duration-200" />
       </a>
+      <p className="text-[10px] text-center text-[#73736D] mt-3">
+        <a
+          href={nativeEmailUrl}
+          className="underline underline-offset-2 hover:text-[#9C7948]"
+        >
+          Use your phone&apos;s default email app
+        </a>
+      </p>
 
       {/* Footer */}
       <p className="text-[10px] text-center text-[#73736D] mt-8 font-light">

@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import GroundEyeLogo from "@/components/GroundEyeLogo";
 
+const auditContactHref = "/contact?service=asset-intelligence#contact-form";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -189,7 +191,7 @@ export default function Navbar() {
           {/* Action CTA Button */}
           <div className="hidden lg:flex items-center space-x-3">
             <Link
-              href="/contact"
+              href={auditContactHref}
               className="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#141413] hover:bg-[#2B2B28] rounded-full transition-all shadow-sm group"
             >
               <span>Schedule Audit</span>
@@ -200,7 +202,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="flex lg:hidden items-center space-x-2">
             <Link
-              href="/contact"
+              href={auditContactHref}
               className="text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full bg-[#141413] text-white"
             >
               Audit
@@ -287,7 +289,8 @@ export default function Navbar() {
 
           <div className="pt-4 border-t border-[#CFB483]/30">
             <Link
-              href="/contact"
+              href={auditContactHref}
+              onClick={() => setIsOpen(false)}
               className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#141413] text-white font-semibold text-xs uppercase tracking-wider shadow-md"
             >
               <span>Schedule Field Audit</span>

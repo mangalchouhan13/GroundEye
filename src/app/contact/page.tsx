@@ -123,7 +123,12 @@ export default async function ContactPage({
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-[#141413]">
                     Official Correspondence
                   </h4>
-                  <p className="text-xs text-[#52524E] font-light">contact.groundeye@gmail.com</p>
+                  <a
+                    href="mailto:contact.groundeye@gmail.com"
+                    className="text-xs text-[#52524E] font-light hover:text-[#9C7948]"
+                  >
+                    contact.groundeye@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -165,7 +170,7 @@ export default async function ContactPage({
           </div>
 
           {/* Right — Contact Buttons */}
-          <div className="lg:col-span-7">
+          <div id="contact-form" className="lg:col-span-7 scroll-mt-28">
             <ContactForm preselectedService={selectedService} />
           </div>
         </div>

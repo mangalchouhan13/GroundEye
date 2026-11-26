@@ -111,7 +111,7 @@ export default function AuditReportPreview() {
             </div>
 
             {/* Photographic Telemetry Frame */}
-            <div className="relative rounded-xl overflow-hidden border border-[#CFB483]/30 bg-[#FAF8F5] aspect-[16/9] max-h-72">
+            <div className="relative rounded-xl overflow-hidden border border-[#CFB483]/30 bg-[#FAF8F5] aspect-[4/3] sm:aspect-video max-h-80 sm:max-h-72">
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
@@ -122,26 +122,26 @@ export default function AuditReportPreview() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/50" />
 
               {/* Architectural Telemetry HUD */}
-              <div className="absolute top-3 left-3 right-3 flex items-center justify-between text-[10px] font-mono text-white bg-black/50 px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-md">
-                <span className="flex items-center gap-1.5 text-[#DFCBA6]">
+              <div className="absolute top-2 sm:top-3 left-2 sm:left-3 right-2 sm:right-3 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 text-[9px] sm:text-[10px] font-mono text-white bg-black/50 px-2 sm:px-3 py-1.5 rounded-xl sm:rounded-full border border-white/20 backdrop-blur-md">
+                <span className="w-full sm:w-auto flex items-center gap-1.5 text-[#DFCBA6]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#CFB483] animate-pulse" />
                   OPTICAL CAM 01 • 4K UHD 60FPS
                 </span>
                 <span>LAT: 24.6201° N | LNG: 73.7153° E</span>
-                <span>ALT: 598m ASL</span>
+                <span className="sm:ml-auto">ALT: 598m ASL</span>
               </div>
 
               {/* Watermark HUD */}
-              <div className="absolute bottom-3 left-3 right-3 bg-[#141413]/90 text-white p-3 rounded-xl border border-[#CFB483]/30 text-xs backdrop-blur-md flex flex-wrap items-center justify-between gap-2">
+              <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 right-2 sm:right-3 bg-[#141413]/90 text-white p-2.5 sm:p-3 rounded-xl border border-[#CFB483]/30 text-[10px] sm:text-xs backdrop-blur-md flex flex-col items-start sm:flex-row sm:items-center sm:justify-between gap-2">
                 <div>
-                  <p className="font-semibold text-xs tracking-wider text-white">
+                  <p className="font-semibold text-[11px] sm:text-xs leading-snug tracking-wider text-white">
                     ILLUSTRATIVE SAMPLE • NOT REAL AUDIT EVIDENCE
                   </p>
-                  <p className="text-slate-400 text-[10px] font-mono mt-0.5">
+                  <p className="text-slate-400 text-[9px] sm:text-[10px] leading-relaxed font-mono mt-1">
                     Bearing: 184° S (True North Calibrated) | Frontage Width: 30.2 ft
                   </p>
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full text-[9px] font-mono bg-[#B89360] text-white font-bold">
+                <span className="px-2.5 py-1 rounded-full text-[9px] font-mono bg-[#B89360] text-white font-bold">
                   SAMPLE IMAGE
                 </span>
               </div>
